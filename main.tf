@@ -9,4 +9,11 @@ terraform{
    }
 }
     
-    
+resource "random_pet" "server" {
+   count = 5
+   keepers = {
+     foo = timestamp()
+   }
+}   
+     
+   
