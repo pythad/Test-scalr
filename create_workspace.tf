@@ -5,12 +5,12 @@ provider scalr {
 
 data "scalr_vcs_provider" test {
   name = "vcs-name"
-  account_id = "acc-xxxx" # if the user has access to more than one account
+  account_id = "acc-u5t8n2k2oc42eb0" # if the user has access to more than one account
 }
 
 data "scalr_environment" test {
   name = "env-name"
-  account_id = "acc-xxxx" # if the user has access to more than one account
+  account_id = "acc-u5t8n2k2oc42eb0" # if the user has access to more than one account
 }
 
 resource "scalr_workspace" "vcs-driven" {
@@ -23,6 +23,6 @@ resource "scalr_workspace" "vcs-driven" {
   vcs_repo {
       identifier          = "org/repo"
       branch              = "dev"
-      trigger_prefixes    = ["stage", "prod"]
+      trigger_prefixes    = ["stage"]
   }
 }
