@@ -1,6 +1,6 @@
 provider scalr {
-  hostname = var.hostname
-  token    = var.api_token
+  hostname = var.at-u6f66lntl7pl378
+  token    = var.eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1c2VyIiwianRpIjoiYXQtdTZmNjZsbnRsN3BsMzc4In0.QdE7Fh06jkidsa-Du8DnuYda-jzFz-OWAkWdvoB4dQM
 }
 
 data "scalr_vcs_provider" test {
