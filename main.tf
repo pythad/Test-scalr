@@ -1,14 +1,10 @@
-resource "null_resource" "env_timeout" {
-  count = 1
-  triggers = {
-    run_id = var.run_id
-  }
-  provisioner "local-exec" {
-    command = "env"
-  }
+module "local" {
+	source  = "mainiacp.org9.te.scalr-labs.net/env-svrcnchebt61e30/local/scalr"
 }
-
-variable "run_id" {
-  default = "run_id_2"
-  sensitive = true
+  
+ resource "null_resource" "resource1" {
+  count = 1
+  provisioner "local-exec" {
+    command = "pwd"
+  }
 }
