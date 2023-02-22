@@ -4,3 +4,7 @@ resource "null_resource" "resource1"{
     command = "pwd"
   }
 }
+
+module "test1" {
+  source = "./Test-Scalr-1"
+}
