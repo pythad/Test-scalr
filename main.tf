@@ -5,6 +5,6 @@ resource "null_resource" "resource1"{
   }
 }
 
-module "test1" {
-  source = "./Test-Scalr-1"
-}
+# module "test1" {
+#   source = "./Test-Scalr-1"
+# }
