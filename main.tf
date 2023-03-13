@@ -3,3 +3,9 @@ resource "null_resource" "resource_main"{
     command = "pwd"
   }
 }
+
+resource "null_resource" "resource_main_second"{
+  provisioner "local-exec" {
+    command = "pwd"
+  }
+}
