@@ -1,4 +1,4 @@
-resource "null_resource" "resource_main_renamed"{
+resource "null_resource" "resource_main"{
   provisioner "local-exec" {
     command = "pwd"
   }
