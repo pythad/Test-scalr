@@ -1,5 +1,5 @@
 resource "null_resource" "resource_main"{
-  count = 1
+  count = 3
   provisioner "local-exec" {
     command = "pwd"
   }
