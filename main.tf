@@ -1,14 +1,6 @@
-resource "random_integer" "int-xc90" {
-  count = 20000
-  min = 2
-  max = 11
-
-  keepers = {
-    run_id = var.run_id
+resource "null_resource" "resource_main"{
+  count = 10000
+  provisioner "local-exec" {
+    command = "pwd"
   }
-}
-
-variable "run_id" {
-  default = "run_id_2"
-  sensitive = true
 }
